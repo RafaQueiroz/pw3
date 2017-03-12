@@ -1,7 +1,6 @@
 import java.util.LinkedList;
 
 public class PilhaCds{
-    public static final int MAX_LENGTH = 7;
     private LinkedList<Cd> cdStack;
     
     

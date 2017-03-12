@@ -1,20 +1,19 @@
 import java.util.LinkedList;
 
 public class Ex2Main{
+    
+    public static final int MAX_LENGTH = 7;
+    
     public static void main(String[] args){
         
         
         PilhaCds cdStack = new PilhaCds();
-        Cd[] cds = new Cd[PilhaCds.MAX_LENGTH];
-        
-        for(int i= 0; i< PilhaCds.MAX_LENGTH; i++){
+                
+        for(int i= 0; i<MAX_LENGTH; i++){
             Cd cdAux = new Cd("cd"+i, 2000+i, "banda"+i);
-            cds[i] = cdAux;
+            cdStack.add(cdAux);
         }
         
-        for(int i= 0; i< PilhaCds.MAX_LENGTH; i++){
-            cdStack.add(cds[i]);
-        }
         System.out.println(cdStack.toString());
         
         for(int i= 0; i< 2; i++){
